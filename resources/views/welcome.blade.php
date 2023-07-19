@@ -6,11 +6,31 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>VauHouse</title>
+    <meta content="kutyakozmetika" name="description">
+    <meta content="kutya, kutyakozmetika, nyírás, vágás, szőrápolás, bio, vegán, olcsó, közelben" name="keywords">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
+
+<div class="full-viewport-section" id="home">
+</div>
+
+<div id="about">
+</div>
+
+<div id="services">
+</div>
+
+<div id="references">
+</div>
+
+<div id="prices">
+</div>
+
+<div id="contact">
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
