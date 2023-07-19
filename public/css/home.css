@@ -1,6 +1,147 @@
-#home{
+#home {
     height: 100vh;
+    background: url(../img/bg7.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+
+.navbar {
+    display: none;
+    opacity: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #dfd0c5;
+    padding: 10px;
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.navbar-scrolled {
     display: flex;
-    justify-content: center;
+    opacity: 1;
+}
+
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    margin-left: 50px;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.list li {
+    display: flex;
     align-items: center;
 }
+
+#toggler, .navbar label {
+    display: none;
+}
+
+.introduction {
+
+    text-align: center;
+    font-family: "Great Vibes";
+    font-size: 50px;
+    color: #766f6a;
+    position: fixed;
+    top: 26vh;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+.homeText {
+    display: inline-block;
+}
+
+
+@media screen and (max-width: 600px) {
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #toggler:checked ~ .menu {
+        max-height: 100%;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    .introduction {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #toggler:checked ~ .menu {
+        max-height: 100%;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    .introduction {
+        font-size: 30px;
+    }
+
+}
+
