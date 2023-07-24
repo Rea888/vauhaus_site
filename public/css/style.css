@@ -1,0 +1,43 @@
+html{
+    scroll-snap-type: y mandatory;
+}
+body {
+    color: #000;
+    background-color: #af9f99;
+    transition: background-color 1s ease;
+    overflow-x: hidden;
+}
+
+
+.panel {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    padding-top: 100px;
+}
+
+.color-violet {
+    background-color: #9c816c;
+}
+.color-indigo {
+    background-color: #8d7b72;
+}
+.color-blue {
+    background-color: #bcaca3;
+}
+.color-green {
+    background-color: #9b9494;
+}
+.color-yellow {
+    background-color: #dccdcb;
+}
+@media screen and (max-width: 600px) {
+    .panel{
+        scroll-snap-align: none;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .panel{
+        scroll-snap-align: none;
+    }
+}
