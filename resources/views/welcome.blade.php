@@ -24,9 +24,6 @@
 <header id="header" class="fixed-top ">
 
     <nav class="navbar">
-        <a href="/" class="logo"><img src="{{asset( '../img/logo.png')}}"
-                                      alt="mancs"
-                                      class="img-fluid" height="20px" width="200px"></a>
         <input type="checkbox" id="toggler">
         <label for="toggler"><i class="bi bi-list mobile-nav-toggle"></i></label>
         <div class="menu">
@@ -34,93 +31,102 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">Rólunk</a></li>
                 <li><a href="#services">Szolgáltatások</a></li>
+                <a href="/" class="logo"><img src="{{asset( '../img/logo.png')}}"
+                                              alt="mancs"
+                                              class="img-fluid" height="20px" width="200px"></a>
                 <li><a href="#references">Referenciák</a></li>
                 <li><a href="#prices">Árak</a></li>
                 <li><a href="#contact">Kapcsolat</a></li>
             </ul>
+
         </div>
     </nav>
 
-</header><!-- End Header -->
+</header>
 
-<div class="container-fluid panel" data-color="white" id="home">
-    <div class="introduction">
-        <p>VauHouse</p>
-        <p class="homeText" data-typed-items="Kiemelkedő gondozást nyújtunk négylábú kedvencének!"></p>
+
+
+
+<div class="container-fluid panel" data-color="white">
+    <div class="container-fluid" id="home">
+        <div class="row">
+            <div class="col landingPageText">
+                <h1>Vauahouse</h1>
+                <p>Kiemelkedő gondozást nyújtunk négylábú kedvencének!</p>
+            </div>
+            <div class="col empty"></div>
+        </div>
+    </div>
+    <div class="dog">
+        <img src="{{asset( '../img/bgdoggy(1).png')}}" alt="logo" class="dog-image">
+    </div>
+    <div class="centered">
+        <img src="{{asset( '../img/treat2.png')}}" alt="logo" class="centered-image">
     </div>
 </div>
 
 
 <div class="panel" id="about" data-color="violet">
-    <div class="paper"></div>
-    <div class="leftTriangle"></div>
     <div class="container-fluid">
         <div class="row">
             <div class="col" id="pics">
                 <div class="pic">
-                    <img src="{{asset( '../img/vauhaus.png')}}" alt="logo" width="400" height="400" class="text-on-pic"
+                    <img src="{{asset( '../img/vauhaus.png')}}" alt="logo" width="400" height="400"
+                         class="text-on-pic"
                          style=" filter: drop-shadow(15px 0px 4px #41423c);">
                     <h1 class="text-on-pic" id="rolunk"
-                        style="position: absolute; top: 250px; left: 50%; transform: translateX(-50%);">-Rólunk-</h1>
-                    <div class="arrow text-on-pic">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <img id="image-on-pic" src="{{asset('../img/happydog.png')}}" alt="mancs" height="700px"
-                         width="650px"
-                         style="display: none; position: relative; filter: drop-shadow(15px 20px 20px #41423c);">
+                        style="position: absolute; top: 250px; left: 50%; transform: translateX(-50%);">
+                        -Rólunk-</h1>
                 </div>
             </div>
-            <div class="col" id="introduction" onclick="expandImage()">
-                <div class="image-container">
-                    <img src="{{asset('../img/whitedoghead.png')}}" class="bg-image" alt="kutyafej" />
-                    <div class="content">
-                        <p> Célunk, hogy kényelmet és egészséget biztosítsunk a kutyusok számára, miközben a gazdik
-                            elégedetten távoznak
-                            tőlünk.</p>
-                    </div>
+            <div class="col" id="introduction">
+                <div class="content">
+                    <p> Célunk, hogy kényelmet és egészséget biztosítsunk a kutyusok számára, miközben a gazdik
+                        elégedetten távoznak
+                        tőlünk.</p>
                 </div>
-                <div class="image-container">
-                    <img src="{{asset('../img/dogheadgrey.png')}}" class="bg-image" alt="kutyafej" style="top:90px; left: 30px"/>
-                    <div class="content">
-                        <p>Kozmetikánkban kizárólag vegán és bio sampont használunk, valamint minőségi kutyaápolási szereket
-                            alkalmazunk.
-                            Fontosnak tartjuk az állatok jólétét és az egészséges, környezetbarát megoldásokat. Ezért
-                            választjuk a
-                            természetes alapanyagokat, amelyek megfelelően tisztítják és ápolják a kutyák szőrzetét.</p>
-                    </div>
-                </div>
-                <div class="image-container">
-                    <img src="{{asset('../img/dogbrown.png')}}" class="bg-image" alt="kutyafej" style="top:180px; left: 90px"/>
-                    <div class="content">
-                        <p>Emellett speciális beszoktató tréninget is kínálunk a kiskutyáknak. Tapasztalt és kutyaszerető
-                            munkatársaink
-                            segítségével a kutyusok könnyedén megszokhatják a kozmetikai kezeléseket, így kellemes és
-                            stresszmentes
-                            élményben lehet részük.</p>
-                    </div>
-                </div>
-
-
-
-
-
-
-                {{--                    <p>Legyen a kutyus hosszú vagy rövid szőrű, kis vagy nagytestű, nálunk biztosan gyönyörű bundával--}}
-                {{--                        távozik.--}}
-                {{--                        Szakértelmünk és specializációnk révén kielégítjük a különböző fajták és igények szerinti--}}
-                {{--                        kutyatulajdonosok--}}
-                {{--                        elvárásait.--}}
-
-                {{--                        A VauHouse-ban fontosnak tartjuk a minőséget, gondoskodást és szeretetet, amit minden egyes--}}
-                {{--                        kedvencünknek--}}
-                {{--                        nyújtunk. Látogasson el hozzánk, és biztos lehet benne, hogy kutyusa jó kezekben lesz!</p>--}}
-
             </div>
         </div>
     </div>
 </div>
+
+            {{--                <div class="image-container">--}}
+
+            {{--                    style="top:90px; left: 30px"/>--}}
+            {{--                    <div class="content">--}}
+            {{--                        <p>Kozmetikánkban kizárólag vegán és bio sampont használunk, valamint minőségi kutyaápolási--}}
+            {{--                            szereket--}}
+            {{--                            alkalmazunk.--}}
+            {{--                            Fontosnak tartjuk az állatok jólétét és az egészséges, környezetbarát megoldásokat. Ezért--}}
+            {{--                            választjuk a--}}
+            {{--                            természetes alapanyagokat, amelyek megfelelően tisztítják és ápolják a kutyák szőrzetét.</p>--}}
+            {{--                    </div>--}}
+            {{--                </div>--}}
+            {{--                <div class="image-container">--}}
+
+            {{--                    <div class="content">--}}
+            {{--                        <p>Emellett speciális beszoktató tréninget is kínálunk a kiskutyáknak. Tapasztalt és--}}
+            {{--                            kutyaszerető--}}
+            {{--                            munkatársaink--}}
+            {{--                            segítségével a kutyusok könnyedén megszokhatják a kozmetikai kezeléseket, így kellemes és--}}
+            {{--                            stresszmentes--}}
+            {{--                            élményben lehet részük.</p>--}}
+            {{--                    </div>--}}
+            {{--                </div>--}}
+
+
+            {{--                    <p>Legyen a kutyus hosszú vagy rövid szőrű, kis vagy nagytestű, nálunk biztosan gyönyörű bundával--}}
+            {{--                        távozik.--}}
+            {{--                        Szakértelmünk és specializációnk révén kielégítjük a különböző fajták és igények szerinti--}}
+            {{--                        kutyatulajdonosok--}}
+            {{--                        elvárásait.--}}
+
+            {{--                        A VauHouse-ban fontosnak tartjuk a minőséget, gondoskodást és szeretetet, amit minden egyes--}}
+            {{--                        kedvencünknek--}}
+            {{--                        nyújtunk. Látogasson el hozzánk, és biztos lehet benne, hogy kutyusa jó kezekben lesz!</p>--}}
+
+
+
 <div class="panel" id="services" data-color="indigo">
     <h2>Indigo panel</h2>
     <h3>This is the services</h3>

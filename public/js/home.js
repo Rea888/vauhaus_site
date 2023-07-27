@@ -1,17 +1,17 @@
 /**
- * navbar appearing
+ * navbar scrolling
  */
 
-window.addEventListener('scroll', function() {
-    var navbar = document.querySelector('.navbar');
-    var scrolledClass = 'navbar-scrolled';
-
-    if (window.pageYOffset > 50) {
-        navbar.classList.add(scrolledClass);
-    } else {
-        navbar.classList.remove(scrolledClass);
+document.getElementById("toggler").addEventListener("change", function(){
+    if(this.checked){
+        document.body.classList.add("no-scroll");
+    }else{
+        document.body.classList.remove("no-scroll");
     }
 });
+
+
+
 
 /**
  * type effect
